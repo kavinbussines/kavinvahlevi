@@ -232,17 +232,21 @@ footer {
     }
 }
 
+/* Video Container */
 .video-container {
-    max-width: 800px; /* Batasi ukuran */
-    margin: auto; /* Tengah secara horizontal */
-    margin-top: 90px;
-    justify-content: center;
-    text-align: center; /* Tengah tombol kontrol */
-  }
-  
-  video {
-    width: 100%; /* Video menyesuaikan lebar container */
-    height: auto;
-    border-radius: 10px; /* Opsional: buat sudut melengkung */
-  }
-  
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+} 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
